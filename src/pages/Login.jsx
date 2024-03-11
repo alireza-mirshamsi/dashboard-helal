@@ -1,13 +1,12 @@
 import React from "react";
-import logo from '../../../public/images/logo-big.png';
+import logo from '../../public/images/logo-big.png';
 import { Link, NavLink } from "react-router-dom";
 import { FaUserShield } from "react-icons/fa";
 import { BsFillShieldLockFill } from "react-icons/bs";
 import { AiOutlineSwapLeft  } from "react-icons/ai";
 
-
 const Login = () => {
-    return (
+  return (
     <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
         <div class="sm:mx-auto sm:w-full sm:max-w-sm">
             <img class="w-auto" src={logo} alt="هلال احمر" />
@@ -40,7 +39,7 @@ const Login = () => {
             </div>
 
             <div>
-                <Link to={"/dashboard"}>
+                <Link to={"/admin"}>
                 <button type="submit" class="flex w-full justify-center rounded-md bg-red-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">
                     ورود
                     <AiOutlineSwapLeft className="text-lg mr-2"/>
@@ -55,7 +54,7 @@ const Login = () => {
             </p>
         </div>
     </div>
-    )
+  )
 }
 
 export default Login

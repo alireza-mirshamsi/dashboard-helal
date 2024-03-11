@@ -8,14 +8,14 @@ import { AiOutlineMessage } from "react-icons/ai";
 import { CgDanger } from "react-icons/cg";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { IoCloudUploadOutline, IoLogOutOutline, IoCalendarOutline  } from "react-icons/io5";
-import logo from "../../../public/images/logo-big.png"
-import logoSm from "../../../public/images/logo-sm.png"
+import logo from "../../public/images/logo-big.png"
+import logoSm from "../../public/images/logo-sm.png"
 import { LuChevronFirst, LuChevronLast  } from "react-icons/lu";
 import { useNavigate } from "react-router-dom";
 
 const {Header, Content, Footer, Sider} = Layout
 
-const Dashboard = () => {
+const MainLayout = () => {
     const [collapsed, setcollapsed] = useState(false)
     const navigate = useNavigate()
     return (
@@ -99,12 +99,14 @@ const Dashboard = () => {
             borderRadius: 15,
           }}
         >
-        محتوا
+        <main>
+          محتوا
+        </main>
         </Content>
       </Layout>
     </Layout>
     )
 }
 
-export default Dashboard
+export default MainLayout
 
