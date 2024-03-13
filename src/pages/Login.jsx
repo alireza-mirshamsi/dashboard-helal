@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../../public/images/logo-big.png';
+import logo from '../../public/images/helal.png';
 import { Link, NavLink } from "react-router-dom";
 import { FaUserShield } from "react-icons/fa";
 import { BsFillShieldLockFill } from "react-icons/bs";
@@ -9,9 +9,10 @@ const Login = () => {
   return (
     <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
         <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-            <img class="w-auto" src={logo} alt="هلال احمر" />
-            {/* <span className="text-xs">سازمان امداد و نجات هلال احمر</span> */}
-            <p className="text-base"> سامانه یکپارچه مدیریت اطلاعات سازمان امداد و نجات (RAROMIS) </p>
+            <div className="flex justify-center">
+                <img class="w-auto" src={logo} alt="هلال احمر" />
+            </div>
+            <p className="text-base pt-3"> سامانه یکپارچه مدیریت اطلاعات سازمان امداد و نجات (RAROMIS) </p>
         </div>
 
         <div class="mt-3 sm:mx-auto sm:w-full sm:max-w-sm">
@@ -29,7 +30,9 @@ const Login = () => {
                 <div class="flex items-center justify-between">
                 <label for="password" class="block text-sm font-medium leading-6 text-gray-900">رمز عبور:</label>
                 <div class="text-sm">
-                    <a href="#" class="text-red-600 hover:text-red-500">رمز عبور را فراموش کرده‌ام</a>
+                    <Link to={"/forget-password"}>
+                    <button class="text-red-600 hover:text-red-500">رمز عبور را فراموش کرده‌ام</button>
+                    </Link>
                 </div>
                 </div>
                 <div class="mt-2 flex">
