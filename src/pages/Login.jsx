@@ -3,7 +3,7 @@ import logo from '../../public/images/helal.png';
 import { Link, NavLink } from "react-router-dom";
 import { FaUserShield } from "react-icons/fa";
 import { BsFillShieldLockFill } from "react-icons/bs";
-import { AiOutlineSwapLeft  } from "react-icons/ai";
+import { AiOutlineSwapLeft } from "react-icons/ai";
 
 const Login = () => {
   return (
@@ -12,17 +12,17 @@ const Login = () => {
             <div className="flex justify-center">
                 <img class="w-auto" src={logo} alt="هلال احمر" />
             </div>
-            <p className="text-base pt-3"> سامانه یکپارچه مدیریت اطلاعات سازمان امداد و نجات (RAROMIS) </p>
+            <p className="text-base text-center pt-3"> سامانه مدیریت اطلاعات سازمان جوانان جمعیت هلال احمر</p>
         </div>
 
-        <div class="mt-3 sm:mx-auto sm:w-full sm:max-w-sm">
+        <div class="mt-2 sm:mx-auto sm:w-full sm:max-w-sm">
             <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">ورود به سامانه</h2>
             <form class="space-y-6" action="#" method="POST">
             <div>
                 <label for="username" class="block text-sm font-medium leading-6 text-gray-900">نام کاربری:</label>
                 <div class="mt-2 flex">
                     <FaUserShield className="mt-2 ml-2" />
-                    <input id="username" name="username" type="text" required class="w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6" />
+                    <input id="username" name="username" type="text" required class="w-full ltr-text rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6" />
                 </div>
             </div>
 
@@ -37,7 +37,7 @@ const Login = () => {
                 </div>
                 <div class="mt-2 flex">
                     <BsFillShieldLockFill className="mt-2 ml-2"/>
-                    <input id="password" name="password" type="password" autocomplete="current-password" required class="w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6" />
+                    <input id="password" name="password" type="password" autocomplete="current-password" required class="w-full ltr-text px-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6" />
                 </div>
             </div>
 
@@ -52,7 +52,7 @@ const Login = () => {
             </form>
 
             <p class="mt-10 text-center text-sm text-gray-500">
-            کلیه حقوق مادی و معنوی این سامانه، متعلق به سازمان امدادونجات جمعیت هلال احمر جمهوری اسلامی ایران می باشد. 
+            کلیه حقوق مادی و معنوی این سامانه، متعلق به سازمان جوانان جمعیت هلال احمر جمهوری اسلامی ایران می باشد. 
             <a href="#" class="mr-3 text-red-600 hover:text-red-500">هلال احمر</a>
             </p>
         </div>
